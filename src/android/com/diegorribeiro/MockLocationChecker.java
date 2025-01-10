@@ -99,7 +99,7 @@ public class MockLocationChecker extends CordovaPlugin{
                                  objGPS.put("formatTime",datetime);
                                  objGPS.put("extra",null);
 
-                                 if (location.isFromMockProvider() == true) {
+                                 if (location.isMock() == true) {
                                      objGPS.put("info","mock-true");
                                      statusMock = "mock-true";
                                  } else {
